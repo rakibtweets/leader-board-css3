@@ -32,7 +32,6 @@ hr {
     /* grid-template: repeat(2, 1fr) / repeat(3, 1fr); */
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(3,1fr );
-
     grid-row-gap: 30px;
 }
 .top-players {
@@ -136,11 +135,26 @@ hr {
         width: 100%;
     }
     .players {
-        background-color: dodgerblue;
+        
         grid-template-columns: repeat(1, 1fr );
+        grid-row-gap: 15px;
        
     }
-    .blogs,.courses{
+    .player{
+        flex-direction: column;
+    }
+    .courses{
         display: none;
+    }
+
+    /* top blog */
+
+    .blogs{
+        grid-template-columns: repeat(1,1fr );
+        grid-row-gap: 15px;
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
     }
 }
