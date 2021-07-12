@@ -5,6 +5,46 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #f3f1ff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #562eff;
+}
+/* navbar styeles */
+
+.navbar-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    
+    padding: 0 210px;
+}
+.logo-icon img{
+    width: 40px;
+    height: 50px;
+}
+.title-name{
+    font-size: 24px;
+    color: #FFFFFF;
+    display: inline;
+    padding-left: 15px;
+}
+.nav-items{
+    display: flex;
+}
+.nav-links{
+    list-style: none;
+    display: inline;
+    padding-right: 35px;
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    
 }
 main {
     display: flex;
@@ -30,8 +70,8 @@ hr {
 .players {
     display: grid;
     /* grid-template: repeat(2, 1fr) / repeat(3, 1fr); */
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(3,1fr );
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
 }
 .top-players {
@@ -131,57 +171,54 @@ hr {
 /* Mobile Devices */
 
 @media only screen and (max-width: 688px) {
-    .container{
+    .container {
         width: 100%;
     }
     .players {
-        
-        grid-template-columns: repeat(1, 1fr );
+        grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 15px;
-       
     }
-    .player{
+    .player {
         flex-direction: column;
     }
-   
 
     /* top blog */
 
-    .blogs,.courses{
-        grid-template-columns: repeat(1,1fr );
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 15px;
     }
-    .blog,.course{
+    .blog,
+    .course {
         flex-direction: column;
         align-items: center;
     }
-    
+
     /* courses  */
-    
-    .courses{
+
+    .courses {
         grid-row-gap: 30px;
     }
-    
 }
 
 /* Tablet devices */
 
-@media only screen and (min-width:689px) and (max-width:991px){
-    .container{
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    .container {
         width: 100%;
     }
-    .players,.courses{
-        grid-template-columns: repeat(2,1fr ); 
-        grid-row-gap: 15px; 
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 15px;
         align-content: center;
-        
     }
-    .palyer{
+    .palyer {
         justify-content: center;
         align-items: center;
     }
-    .blogs{
-        grid-template-columns: repeat( 1,1fr ); 
-       
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
