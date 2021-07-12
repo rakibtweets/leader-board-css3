@@ -17,8 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 95px;
-    
+    height: 95px; 
     padding: 0 210px;
 }
 .logo-icon img{
@@ -171,6 +170,37 @@ hr {
 /* Mobile Devices */
 
 @media only screen and (max-width: 688px) {
+    .navbar-items{
+        
+        position: relative;
+        
+        
+    }
+    .logo-icon{
+        display: none;
+        
+    }
+    .nav-links{
+        padding-top: 20px;
+        width: 100%;
+        display: inline;
+        
+        
+    }
+    .nav-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        left: 20px;
+        
+    }
+    .nav-items ul{
+        display: flex;  
+       
+    }
+
     .container {
         width: 100%;
     }
