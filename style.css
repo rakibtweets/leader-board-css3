@@ -107,7 +107,7 @@ hr {
 .course-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .fa-start {
@@ -143,18 +143,45 @@ hr {
     .player{
         flex-direction: column;
     }
-    .courses{
-        display: none;
-    }
+   
 
     /* top blog */
 
-    .blogs{
+    .blogs,.courses{
         grid-template-columns: repeat(1,1fr );
         grid-row-gap: 15px;
     }
-    .blog{
+    .blog,.course{
         flex-direction: column;
+        
+    }
+    
+    /* courses  */
+    
+    .courses{
+        grid-row-gap: 30px;
+    }
+    
+}
+
+/* Tablet devices */
+
+@media only screen and (min-width:689px) and (max-width:991px){
+    .container{
+        width: 100%;
+    }
+    .players,.courses{
+        grid-template-columns: repeat(2,1fr ); 
+        grid-row-gap: 15px; 
+        align-content: center;
+        
+    }
+    .palyer{
+        justify-content: center;
         align-items: center;
+    }
+    .blogs{
+        grid-template-columns: repeat( 1,1fr ); 
+       
     }
 }
